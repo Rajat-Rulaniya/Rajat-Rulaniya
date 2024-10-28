@@ -1,3 +1,4 @@
+<h1 align="center">Hi, I am Rajat Rulaniya</h1>
 <h3 align="center">Learning & implementing DevOps</h3>
 
 <p align="left"> <a href="https://twitter.com/rajatrulaniya" target="blank"><img src="https://img.shields.io/twitter/follow/rajatrulaniya?logo=twitter&style=for-the-badge" alt="rajatrulaniya" /></a> </p>
