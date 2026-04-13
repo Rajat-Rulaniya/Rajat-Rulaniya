@@ -9,7 +9,7 @@
 
 ## 🧠 About Me
 
-> *Systems-first mindset. I don't rely on motivation, I build systems that guarantee execution.*
+**Systems-first mindset.** I don't rely on motivation, I build systems that guarantee execution.
 
 - 🔧 I break complex systems into small, executable components and build them step by step
 - 📚 Strong believer in **deep work** and **deliberate practice**. Long-term mastery over short-term results
@@ -35,7 +35,7 @@
 
 ### 🚀 [DevSecOps End-to-End Pipeline](https://github.com/Rajat-Rulaniya/devsecops-end-to-end) &nbsp; <sub>`AWS` `EKS` `Jenkins` `ArgoCD` `Terraform` `Trivy` `SonarQube`</sub>
 
-> Production-grade DevSecOps pipeline for a 3-tier application. **Zero manual steps from commit to production.**
+Production-grade DevSecOps pipeline for a 3-tier application. **Zero manual steps from commit to production.**
 
 <details>
 <summary><b>What I built  →</b></summary>
@@ -57,7 +57,7 @@ Push to main → Security Scans → Build & Scan Images → Update GitOps Repo �
 
 ### ⚙️ [Blue-Green Deployments on Kubernetes](https://github.com/Rajat-Rulaniya/prod-grade-cicd-k8s) &nbsp; <sub>`Jenkins` `Kubernetes` `Helm` `Docker` `Trivy`</sub>
 
-> Zero-downtime deployment system using **blue-green strategy** on Kubernetes with instant rollback.
+Zero-downtime deployment system using **blue-green strategy** on Kubernetes with instant rollback.
 
 <details>
 <summary><b>What I built  →</b></summary>
@@ -81,7 +81,7 @@ Old color stays running → Rollback = one kubectl patch command
 
 ### ⚡ [Instant Kubernetes Cluster](https://github.com/Rajat-Rulaniya/instant-k8s-cluster) &nbsp; <sub>`Terraform` `Ansible` `Bash` `AWS`</sub>
 
-> **One-command** Kubernetes cluster provisioning system on AWS. Designed for learning and experimentation.
+**One-command** Kubernetes cluster provisioning system on AWS. Designed for learning and experimentation.
 
 <details>
 <summary><b>What I built  →</b></summary>
