@@ -1,70 +1,132 @@
-<h1 align="left">Rajat Rulaniya</h1>
+<h1 align="center">Rajat Rulaniya</h1>
 
-###
+<p align="center">
+  <b>DevOps & Cloud Engineer</b><br/>
+  <em>I design and build end-to-end infrastructure, from CI/CD pipelines to Kubernetes clusters,<br/>with a strong focus on automation, security, and real-world reliability.</em>
+</p>
 
-<h3 align="left">Learning & implementing DevOps</h3>
+---
 
-###
+## 🧠 About Me
 
-<h3 align="left">Languages:</h3>
+> *Systems-first mindset. I don't rely on motivation, I build systems that guarantee execution.*
 
-###
+- 🔧 I break complex systems into small, executable components and build them step by step
+- 📚 Strong believer in **deep work** and **deliberate practice**. Long-term mastery over short-term results
+- 🎯 I don't aim to *"learn DevOps"*. I aim to become someone who can **design, build, and operate real infrastructure**
+- ⚡ I optimize for **consistency**, not intensity
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="go logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-</div>
+---
 
-###
+## 🧰 Core Stack
 
-<h3 align="left">Tools:</h3>
+| Category | Technologies |
+|----------|-------------|
+| **☁️ Cloud** | AWS (EKS, EC2, ECS, VPC, IAM, EBS, S3, RDS, Networking) |
+| **🔄 CI/CD & GitOps** | Jenkins, GitHub Actions, ArgoCD |
+| **📦 Containers & Orchestration** | Docker, Kubernetes, Helm |
+| **🏗️ Infrastructure as Code** | Terraform |
+| **🔒 Monitoring & Security** | Prometheus, Grafana, Trivy, SonarQube, GitLeaks |
+| **💻 Languages & Systems** | Linux, Bash, Python, Go, Networking |
 
-###
+---
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="kubernetes logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" height="40" alt="argocd logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="40" alt="amazonwebservices logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" height="40" alt="ansible logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" height="40" alt="prometheus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" height="40" alt="grafana logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-line.svg" height="40" alt="jenkins logo"  />
-</div>
+## 🏗️ Featured Projects
 
-###
+### 🚀 [DevSecOps End-to-End Pipeline](https://github.com/Rajat-Rulaniya/devsecops-end-to-end) &nbsp; <sub>`AWS` `EKS` `Jenkins` `ArgoCD` `Terraform` `Trivy` `SonarQube`</sub>
 
-<h2 align="left">Contact:</h2>
+> Production-grade DevSecOps pipeline for a 3-tier application. **Zero manual steps from commit to production.**
 
-###
+<details>
+<summary><b>What I built  →</b></summary>
+<br/>
 
-<div align="left">
-  <a href="https://x.com/RajatRulaniya" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
-  </a>
-  <a href="https://www.linkedin.com/in/rajat-rulaniya/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-</div>
+- Complete **11-stage Jenkins CI pipeline** integrating secret scanning (GitLeaks), SAST (SonarQube), and vulnerability scanning (Trivy at filesystem + image level)
+- **GitOps-based CD** using ArgoCD. CI never touches the cluster; image tags are updated in a [separate manifest repo](https://github.com/Rajat-Rulaniya/k8s-gitops-manifests), and ArgoCD syncs to EKS
+- AWS infrastructure (**VPC + EKS + IAM + OIDC/IRSA + Nginx Ingress + cert-manager + ArgoCD**) provisioned using modular Terraform
+- Automated Docker image build → Trivy scan → push to Docker Hub → update GitOps repo → ArgoCD deploy → Slack notification
+- TLS automated via **Let's Encrypt** + cert-manager, ingress routing via Nginx
 
-###
+```
+Push to main → Security Scans → Build & Scan Images → Update GitOps Repo → ArgoCD Syncs → Live in Production
+```
+
+</details>
+
+---
+
+### ⚙️ [Blue-Green Deployments on Kubernetes](https://github.com/Rajat-Rulaniya/prod-grade-cicd-k8s) &nbsp; <sub>`Jenkins` `Kubernetes` `Helm` `Docker` `Trivy`</sub>
+
+> Zero-downtime deployment system using **blue-green strategy** on Kubernetes with instant rollback.
+
+<details>
+<summary><b>What I built  →</b></summary>
+<br/>
+
+- **Independent CI/CD pipelines** for frontend (React) and backend (Spring Boot), each with their own Jenkinsfile
+- Automated traffic switching using **Kubernetes Service selector patching**. Instant cutover, zero downtime
+- **Helm charts** with color-scoped resources. Every Deployment and ConfigMap is namespaced by `blue` / `green`
+- Security scanning with **pipeline-level enforcement**. Trivy blocks the release on HIGH/CRITICAL CVEs
+- **Instant rollback**. No redeployment needed, just patch the Service selector back to the previous color
+- Dedicated **Slack channels** per service (`#backend-alerts`, `#frontend-alerts`, `#security-alerts`)
+
+```
+Deploy to inactive color → Health check → Patch Service selector → Traffic switches instantly
+Old color stays running → Rollback = one kubectl patch command
+```
+
+</details>
+
+---
+
+### ⚡ [Instant Kubernetes Cluster](https://github.com/Rajat-Rulaniya/instant-k8s-cluster) &nbsp; <sub>`Terraform` `Ansible` `Bash` `AWS`</sub>
+
+> **One-command** Kubernetes cluster provisioning system on AWS. Designed for learning and experimentation.
+
+<details>
+<summary><b>What I built  →</b></summary>
+<br/>
+
+- Fully automated cluster setup using **Terraform + Ansible + Bash**. Just run `./create_cluster.sh`
+- Dynamic infrastructure: configurable **K8s version**, **node count**, **instance types** via variables
+- Automated **kubeconfig** setup. Start running `kubectl` immediately after provisioning
+- **Self-healing API server certificates**. Systemd service regenerates certs on instance restart
+- Safe re-runs. Script checks Terraform state and exits if cluster already exists
+
+```
+./create_cluster.sh  →  Terraform provisions  →  Ansible configures  →  kubectl get nodes ✅
+```
+
+</details>
+
+---
+
+## 🧠 Deep Interests
+
+- 🌐 Distributed systems and system design
+- ☁️ Cloud architecture and scalability patterns
+- ⚙️ Infrastructure automation at scale
+- 🔐 DevSecOps: security baked into pipelines
+- 🔍 Understanding how systems work under the hood
+
+---
+
+## 🎯 Direction
+
+Focused on becoming a high-level **DevOps & Cloud engineer** capable of **designing and operating production systems from scratch**. Not just using tools, but **understanding how they work under the hood**.
+
+Targeting engineering roles that value **depth**, **ownership**, and **real execution**.
+
+---
+
+## 🤝 Connect
+
+- **LinkedIn** → [in/rajat-rulaniya](https://www.linkedin.com/in/rajat-rulaniya/)
+- **X (Twitter)** → [@RajatRulaniya](https://x.com/RajatRulaniya)
+- **Email** → [rajatrulaniya2005@gmail.com](mailto:rajatrulaniya2005@gmail.com)
+
+---
+
+<p align="center">
+  <em>"I don't aim for motivation. I build systems that guarantee execution."</em>
+</p>
